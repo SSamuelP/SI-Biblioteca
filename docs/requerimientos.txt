@@ -1,0 +1,89 @@
+**Requerimientos de un sistema de Gestión de Préstamos de una Biblioteca**
+
+- Registro de Usuarios:
+	• Identificación
+	• Nombre Completo
+	• Dirección física
+	• Número de celular
+	• Correo electrónico
+	• Fecha de Nacimiento
+	• Ocupación, si trabaja, o centro de estudios, si estudia.
+
+	• Validación del correo y del número celular.
+	• La identificación debe ser única.
+
+
+- Gestión de Catálogo. Mantener un catalogo actualizado de los articulos.
+	• Libros, revistas, DVDs, DCs, periodicos, etc.
+	• Para cada articulo:
+		• Titulo completo
+		• Autor(es)
+		• Año de publicación
+		• Editorial
+		• ID/ISBN/ISSN
+		• Palabras clave
+		• Categoria
+		• Cantidad de ejemplares.
+		• Estado (Dispoible, Prestado, Dañado, Perdido )
+	• Las categorías son fijas, pero pueden agregar más
+	• Número de identificación único
+	• Realizar búsquedas por: titulo, autor, categoria y palabras clave. Implementar para más criterios de búsqueda.
+
+
+- Control de las fechas de devolución. Registrar préstamos, devoluciones.
+	• Para realizar un préstamo:
+		• Identificación
+		• Título o autor
+		• Verifica la disponibilidad del artticulo. si lo está, se le da un formulario
+
+	• Información del formulario:
+		• Nombre del usuario
+		• ID del usuario
+		//• Tipo de préstamo
+		• Titulo del articulo
+		• Número del ejemplar
+		• Fecha del prestamo
+		• Fecha de devolución
+		• Estado (Devuelto o no devuelto)
+
+	• Devolución
+		• usuario
+		• articulo a devolver
+		• Verificar que corresponda al registrado en el formulario
+		• Se marca como devuelto en el formulario
+
+	• Reserva de articulos que no estén disponibles
+
+
+- Aplicación de multas. Registrar multas.
+	• Multas
+		• Monto fijo por día de retraso
+		• Calcula dias de retraso y múltiplica por el monto fijo
+
+	• Notificación por no devolver articulo
+		• Recordatorio por correo o telefono
+		
+		• Si no responde, se bloquea al usuario a nuevos préstamos hasta que devuelva el articulo y cancele la multa
+
+
+- Generar reportes.
+	• Consultar disponibilidad de un articulo para préstamo, o si está prestado
+	• Consultar historial de préstamos de un usuario o un articulo
+	• Consultar la lista de articulos que no han sido devueltos a la fecha
+	• Consultar usuarios con multas pendientes
+
+	• Generar reportes de los articulos más prestados
+	• Los usuarios que más utilizan la biblioteca
+	• Uno de los articulos perdidos o dañados
+	• Ingresos generados por las multas
+
+	• Reportes de frecuencia semanal, para seguimiento, y mensual para el registro.
+	• Incluir filtros adicionales, como reportes por categoria o rango de fechas
+	• Exportar reportes como Excel o PDF
+
+
+- Interfaz intuitiva y fácil de usar, con opciones de busqueda avanzada y filtros.
+
+- Seguridad de los datos de usuarios y del catálogo
+
+- Buzón de sugerencias
